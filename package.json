@@ -34,7 +34,7 @@
   "scripts": {
     "start": "node .",
     "nodemon": "nodemon -e ejs,js,css,json",
-    "dbInit": "node . --database --reset --all"
+    "dbInit": "node src/database/database.js --database --reset --all --force"
   },
   "engines": {
     "node": "12.16.3"
