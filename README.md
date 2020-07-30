@@ -32,7 +32,6 @@ Bot offers:
 
 ### Links
 
-* [Invite the Bot](https://discord.com/oauth2/authorize?client_id=634908645896880128&scope=bot&permissions=285599830)
 * [Support Server](https://discord.gg/Pp9T2zS)
 
 
