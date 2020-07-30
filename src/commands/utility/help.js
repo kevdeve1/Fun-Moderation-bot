@@ -169,15 +169,14 @@ module.exports = class extends BaseCommand {
         .addField(`🎫 Ticket System`, `\`ticket\``, true)
         .addField(`♾️ Dynamic Text/Voice`, `\`dynamic\``, true)
         .addField(
-          `${await client.getEmoji("tools")} Utility`,
+          ` Utility`,
           `\`utility\``,
           true
         )
         .addField(`🔍 Search`, `\`search\``, true)
-        .addField(`${await client.getEmoji("yes")} Misc`, `\`misc\``, true)
+        .addField(` Misc`, `\`misc\``, true)
         .addField("😂 Fun", `\`fun\``, true)
         .setTimestamp()
-        .addFooter("Bot By 0_0#6666")
     );
   }
 };
