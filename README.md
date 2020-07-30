@@ -23,7 +23,6 @@ Bot offers:
 >
 > * 🚓 **Moderation**
 > * ⚙️ **Configuration** 
-> * 💰 **Economy**
 > * 🖨️ **Miscellaneous**
 > * 🗳️ **Ticket System**
 > * 🎵 **Dynamic Text/Voice**
