@@ -1,6 +1,6 @@
 Note: this bot wont be receiving any "source code" updates except for documentations
 
-## 0_0Bot 
+## Bot 
 
 A Powerful multipurpose Discord Bot with over than 100+ commands!
 
