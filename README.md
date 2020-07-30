@@ -19,7 +19,7 @@ Bot offers:
 
 #### Many Commands \(yes\)
 
-> Unicron has alot of commands reaching 100+ split into 9 categories!
+> It has alot of commands reaching 100+ split into 9 categories!
 >
 > * 🚓 **Moderation**
 > * ⚙️ **Configuration** 

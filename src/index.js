@@ -2,7 +2,9 @@ require('dotenv').config();
 require('./terminal');
 require('./database/Connection');
 require('./listeners/process');
-const { Logger } = require('./utils');
+
+if (!process.argv.includes('--database')) {
+  const { Logger } = require('./utils');
 const { ShardingManager } = require('discord.js');
 
 const Manager = new ShardingManager('./src/Unicron.js', {
@@ -37,3 +39,4 @@ Manager.on('shardCreate', (shard) => {
 });
 
 require('./server/server')(Manager);
+}

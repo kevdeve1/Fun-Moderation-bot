@@ -51,7 +51,7 @@ const GuildDB = new Sequelize(
     }
 )
 
-const Admin = UnicronDB.import('../models/unicron');
+const Admin = require('../models/unicron')(UnicronDB, );
 
 const UserProfile = UserDB.import('../models/user/profile');
 const UserInventory = UserDB.import('../models/user/inventory');
