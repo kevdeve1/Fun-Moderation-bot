@@ -79,19 +79,19 @@ const GuildMember = require("../models/guild/member")(GuildDB, DataTypes);
 (async function() {
   if (process.argv.includes("--database")) {
     Logger.info("Connecting to databases...");
-    await UnicronDB.sync({ force: true, logging: console.log })
+    await UnicronDB.sync({ force: true })
       .then(() => {
         Logger.info("Unicron Database Synced!");
         UnicronDB.close();
       })
       .catch(Logger.error);
-    await UserDB.sync({ force: true, logging: console.log })
+    await UserDB.sync({ force: true })
       .then(() => {
         Logger.info("User Database Synced!");
         UserDB.close();
       })
       .catch(Logger.error);
-    await GuildDB.sync({ force: true, logging: console.log })
+    await GuildDB.sync({ force: true })
       .then(() => {
         Logger.info("Guild Database Synced!");
         GuildDB.close();
