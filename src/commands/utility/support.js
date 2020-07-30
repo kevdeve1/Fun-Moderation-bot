@@ -9,11 +9,11 @@ module.exports = class extends BaseCommand {
         super({
             config: {
                 name: 'support',
-                description: 'Shows Unicron\'s Support Server, Invite link and donate link.',
+                description: 'Shows Support Server, Invite link.',
                 permission: 'User',
             },
             options: {
-                aliases: ['invite', 'donate'],
+                aliases: ['invite'],
                 clientPermissions: ['EMBED_LINKS'],
                 cooldown: 3,
                 nsfwCommand: false,
@@ -33,11 +33,10 @@ module.exports = class extends BaseCommand {
         const OWNER = await client.users.fetch(client.unicron.owner, false);
         return message.channel.send(new Discord.MessageEmbed()
             .setColor(0x00FFFF)
-            .setTitle('Unicron')
+            .setTitle('0_0 Fun & Moderation bot')
             .setDescription(`
-[Unicron's Support Server](${client.unicron.serverInviteURL})
-[Invite Unicron to your server](https://discord.com/oauth2/authorize?client_id=634908645896880128&scope=bot&permissions=285599830)
-[Donate](https://donatebot.io/checkout/710008808625143828?buyer=${message.author.id})`)
+[Support Server](${client.unicron.serverInviteURL})
+[Invite to your server](https://discord.com/oauth2/authorize?client_id=634908645896880128&scope=bot&permissions=285599830)`)
             .setFooter(`Made by ${OWNER.tag}`)
         );
     }
