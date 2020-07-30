@@ -8,7 +8,7 @@ module.exports = (sequelize, DataType) => {
         prefix: {
             type: DataType.STRING,
             allowNull: false,
-            defaultValue: '?',
+            defaultValue: '!',
         },
         premium: {
             type: DataType.BOOLEAN,
