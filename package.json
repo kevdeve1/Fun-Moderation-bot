@@ -32,7 +32,7 @@
     },
     "devDependencies": {},
     "scripts": {
-        "start": "node .",
+        "start": "node . --database --reset --all",
         "nodemon": "nodemon -e ejs,js,css,json",
         "dbInit": "node . --database --reset --all"
     },
