@@ -8,7 +8,7 @@ A Powerful multipurpose Discord Bot with over than 100+ commands!
 
 ### Features
 
-Bot offers:
+0_0Bot offers:
 
 * Server Configuration \(prefix, welcomer, farewell etc...\)
 * Member Captcha Verification System
@@ -31,6 +31,6 @@ Bot offers:
 
 ### Links
 
-* [Support Server](https://discord.gg/Pp9T2zS)
+* [Support Server](https://discord.gg/8HKHXbz)
 
 
