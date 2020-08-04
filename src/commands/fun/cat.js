@@ -33,7 +33,7 @@ module.exports = class extends BaseCommand {
      */
     async run(client, message, args) {
         try {
-            const response = await fetch('http://placekitten.com/200/300');
+            const response = await fetch('https://placekitten.com/200/300');
             const body = await response.json();
             message.channel.send(new Discord.MessageEmbed()
                 .setColor('RANDOM')
