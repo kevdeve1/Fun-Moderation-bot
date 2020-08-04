@@ -3,4 +3,5 @@ module.exports = async (Manager) => {
     const client = new Server(Manager);
     await client.register();
     client.login(process.env.PORT);
+  
 }

@@ -17,7 +17,7 @@ module.exports = class extends BaseCommand {
                 aliases: ['capture', 'snap'],
                 clientPermissions: ['ATTACH_FILES'],
                 cooldown: 10,
-                nsfwCommand: true,
+                nsfwCommand: false,
                 args: true,
                 usage: 'screenshot <URL>',
                 donatorOnly: false,
@@ -36,7 +36,7 @@ module.exports = class extends BaseCommand {
         const site = /^(https?:\/\/)/i.test(urls) ? urls : `http://${urls}`;
         try {
 			const { body } = await fetch(`https://image.thum.io/get/width/1920/crop/675/noanimate/${site}`);
-			return message.channel.send(`Snapy Snappy Screenie Sreenie web web site`,{ files: [{ attachment: body, name: 'screenshot.png' }] });
+			return message.channel.send(`Here is a screenshot from requested URL`,{ files: [{ attachment: body, name: 'screenshot.png' }] });
 		} catch (err) {
 			if (err.status === 404) return message.channel.send('Could not find any results. Invalid URL?');
 			return message.reply(`Oh no, an error occurred: \`${err.message}\`. Try again later!`);
