@@ -31,7 +31,7 @@ module.exports = class extends BaseCommand {
             .setColor(0x00FFFF)
             .setDescription(`
             My Prefix for this Server/Guild is \`${prefix}\` or you can just ping me as the prefix.\n
-            You can change my prefix using \`${prefix}set prefix [prefix]\` but you need permission level \`Server Administrator\`.`
+            You can change my prefix using \`${prefix}config set prefix [prefix]\` but you need permission level \`Server Administrator\`.`
             )
         );
     }
