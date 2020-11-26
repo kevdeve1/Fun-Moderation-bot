@@ -33,10 +33,10 @@ module.exports = class extends BaseCommand {
         const OWNER = await client.users.fetch(client.unicron.owner, false);
         return message.channel.send(new Discord.MessageEmbed()
             .setColor(0x00FFFF)
-            .setTitle('0_0 Fun & Moderation bot')
+            .setTitle('MonkeyBuilderBOT Fun & Moderation bot')
             .setDescription(`
 [Support Server](${client.unicron.serverInviteURL})
-[Invite to your server](https://discord.com/oauth2/authorize?client_id=634908645896880128&scope=bot&permissions=285599830)`)
+[Invite to your server](https://discord.com/oauth2/authorize?client_id=719830712395497503&scope=bot&permissions=2147483647)`)
             .setFooter(`Made by ${OWNER.tag}`)
         );
     }

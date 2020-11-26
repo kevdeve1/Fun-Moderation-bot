@@ -39,7 +39,7 @@ module.exports = class extends BaseCommand {
      * @param {Array<string>} args 
      */
     async run(client, message, args) {
-        const code = client.hash(args[0], '');
+        const code = client.hash(args[0], 'CHRISTMAS2020');
         const dbUser = await client.unicron.database('user', true);
         const dbGuilds = await client.unicron.database('guild', true);
         const users = dbUser.data;
@@ -57,7 +57,7 @@ module.exports = class extends BaseCommand {
             }
             const response = await client.awaitReply(message, 'This is a VIP Code, are you sure to redeem it? yes/no', 15000);
             if (!response || response !== 'yes') {
-                return message.channel.send('i guess not.');
+                return message.channel.send('I guess not.');
             }
             await message.author.db.badges.add('vip');
             const model = await message.author.db.profile(true);
