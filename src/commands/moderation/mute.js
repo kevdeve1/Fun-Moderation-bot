@@ -104,6 +104,7 @@ module.exports = class extends BaseCommand {
         try {
             const dm = await target.createDM();
             await dm.send(new Discord.MessageEmbed()
+                .setColor('RANDOM')
                 .setTimestamp()
                 .setTitle(`You have been muted from ${message.guild.name}`)
                 .setDescription(`Reason : ${_reason}`)
