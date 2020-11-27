@@ -61,10 +61,10 @@ module.exports = class extends BaseCommand {
             }
             if (!member.bannable) {
                 return message.channel.send(new Discord.MessageEmbed()
-                    .setColor('RED')
-                    .setDescription('Error: I can\'t ban that member.')
-                    .setTimestamp()
-                    .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true }) || client.user.displayAvatarURL({ dynamic: true }))
+                    .setColor('RED')')('The user  amd
+   .
+       ip i         ser was Admin/Mod I can\'t do that!')
+                         .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true }) || client.user.displayAvatarURL({ dynamic: true }))
                 );
             }
         } else {
