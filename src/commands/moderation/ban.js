@@ -61,10 +61,9 @@ module.exports = class extends BaseCommand {
             }
             if (!member.bannable) {
                 return message.channel.send(new Discord.MessageEmbed()
-                    .setColor('RED')')('The user  amd
-   .
-       ip i         ser was Admin/Mod I can\'t do that!')
-                         .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true }) || client.user.displayAvatarURL({ dynamic: true }))
+                    .setColor('RED')
+                    .setDescription('The user was Admin or Mod I can\'t do that.')
+                    .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true }) || client.user.displayAvatarURL({ dynamic: true }))
                 );
             }
         } else {
@@ -72,7 +71,7 @@ module.exports = class extends BaseCommand {
                 .setColor('RED')
                 .setDescription(`You can't ban a user that is not on this server. ;-;`)
                 .setTimestamp()
-                .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true }) || client.user.displayAvatarURL({ dynamic: true }))
+                .setTitle(message.author.tag, message.author.displayAvatarURL({ dynamic: true }) || client.user.displayAvatarURL({ dynamic: true }))
             );
         }
         const duration = reason[0] ? ms(reason[0]) : false;
