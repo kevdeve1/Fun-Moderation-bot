@@ -20,10 +20,13 @@ client.on('message', async message => {
 
 });
 
-setInterval(async () => {
+let count = 0;
+setInterval(
+  () =>
+    require("node-fetch")(process.env.URL).then(() =>
+      console.log(`[${++count}] here i pinged ${process.env.URL}`)
+    ),
+  300000
+);
 
-  await fetch('https://internal-spangle-trombone.glitch.me').then(console.log('Pinged!'))
-
-}, 270000)
-
-client.login('NzE5ODMwNzEyMzk1NDk3NTAz.Xt9Ilw.istehxX6Iiyr6vHzs24VjisJLEI')
+client.login(process.env.BOT_TOKEN);
