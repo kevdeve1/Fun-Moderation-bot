@@ -24,6 +24,6 @@ setInterval(async () => {
 
   await fetch('https://internal-spangle-trombone.glitch.me').then(console.log('Pinged!'))
 
-}, 240000)
+}, 270000)
 
 client.login('NzE5ODMwNzEyMzk1NDk3NTAz.Xt9Ilw.istehxX6Iiyr6vHzs24VjisJLEI')
