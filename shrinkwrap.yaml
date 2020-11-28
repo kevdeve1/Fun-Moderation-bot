@@ -17,7 +17,7 @@ dependencies:
   moment: 2.27.0
   moment-duration-format: 2.3.2
   ms: 2.1.2
-  node-fetch: 2.6.0
+  node-fetch: 2.6.1
   one-liner-joke: 1.2.0
   passport: 0.4.1
   passport-discord: 0.1.4
@@ -1163,6 +1163,12 @@ packages:
       node: 4.x || >=6.0.0
     resolution:
       integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  /node-fetch/2.6.1:
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    resolution:
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
   /node-gyp-build/3.7.0:
     dev: false
     hasBin: true
@@ -1958,7 +1964,7 @@ specifiers:
   moment: ^2.27.0
   moment-duration-format: ^2.3.2
   ms: ^2.1.2
-  node-fetch: ^2.6.0
+  node-fetch: ^2.6.1
   one-liner-joke: ^1.2.0
   passport: ^0.4.1
   passport-discord: ^0.1.4
