@@ -19,7 +19,7 @@ setInterval(
     require("node-fetch")(process.env.URL).then(() =>
       console.log(`[${++count}] here i pinged ${process.env.URL}`)
     ),
-  300000
+  86400000
 );
 
 client.login(process.env.BOT_TOKEN);
