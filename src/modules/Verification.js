@@ -23,7 +23,7 @@ module.exports = (client, message) => {
                 verified = message.content === `I am ${message.author.discriminator}`;
             } else if (type === 'captcha') {
                 const cptcha = await message.member.db.captcha.fetch();
-                verified = message.content === `>verify ${cptcha}`;
+                verified = message.content === `!verify ${cptcha}`;
             }
             if (!verified) return;
             message.channel.send(new MessageEmbed()
