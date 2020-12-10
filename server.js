@@ -13,7 +13,7 @@ client.on('message', async message => {
   }
 });
 
-let count = 0;
+let count = 86400000;
 setInterval(
   () =>
     require("node-fetch")(process.env.URL).then(() =>
