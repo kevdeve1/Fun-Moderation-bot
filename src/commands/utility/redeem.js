@@ -39,7 +39,7 @@ module.exports = class extends BaseCommand {
      * @param {Array<string>} args 
      */
     async run(client, message, args) {
-        const code = client.hash(args[0], 'CHRISTMAS2020');
+        const code = client.hash(args[0], '2021');
         const dbUser = await client.unicron.database('user', true);
         const dbGuilds = await client.unicron.database('guild', true);
         const users = dbUser.data;
