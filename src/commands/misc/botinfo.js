@@ -32,7 +32,7 @@ module.exports = class extends BaseCommand {
     async run(client, message, args) {
         message.channel.send(new Discord.MessageEmbed()
             .setColor('RANDOM')
-            .setTitle(`MonkeyBuilderBOT v${version}`)
+            .setTitle(`SakuraV1 | v${version}`)
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .addField('Uptime', `${ms(client.uptime)}`, true)
             .addField('WebSocket Ping', `${client.ws.ping}ms`, true)
@@ -44,7 +44,8 @@ module.exports = class extends BaseCommand {
             .addField('Node', `${process.version} on ${process.platform} ${process.arch}`, true)
             .addField('Cached Data', `${client.users.cache.size} users\n${client.emojis.cache.size} emojis`, true)
             .addField('Discord.js', `${discordjsVersion}`, true)
-            .addField('Developer/Owner', 'Zedge#1000')
+            .addField('Owner', '//Goju//#7300')
+            .addField('Developers', 'Zedge#0516')
             .setTimestamp()
         );
     }
