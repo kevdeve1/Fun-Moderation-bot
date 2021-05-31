@@ -21,4 +21,4 @@ module.exports = (client) => {
  client.on("ready", () => {
    client.user.setPresence({ activity: { name: "Sakura EPS 310"}, status: "wacthing"})
  })
-
+}
