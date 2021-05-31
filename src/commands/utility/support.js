@@ -36,7 +36,7 @@ module.exports = class extends BaseCommand {
             .setTitle('SakuraV1 Fun & Moderation bot')
             .setDescription(`
 [Support Server](${client.unicron.serverInviteURL})
-[Invite to your server](https://discord.com/oauth2/authorize?client_id=&scope=764845261083639858bot&permissions=2147483647)`)
+[Invite to your server](https://discord.com/oauth2/authorize?client_id=764845261083639858&scope=bot&permissions=2147483647)`)
             .setFooter(`Made by //Goju//`)
         );
     }
