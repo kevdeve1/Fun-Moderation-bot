@@ -13,12 +13,4 @@ client.on('message', async message => {
   }
 });
 
-let count = 86400000;
-setInterval(
-  () =>
-    require("node-fetch")(process.env.URL).then(() =>
-      console.log(`[${++count}] here i pinged ${process.env.URL}`)
-    ),
-  86400000
-);
 client.login(process.env.BOT_TOKEN);
